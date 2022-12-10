@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Kenia&family=Roboto:wght@300;400;500;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+   
+}
+h1, h2, h3, h4, h5, h6{
+    width: auto;
+    margin: 0px;
+    padding: 0px;
+}
+
+h1{
+    font-size: 36px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color:#6e6565;
+    letter-spacing: 0.04ch;
+}
+h2{
+    font-size: 24px;
+    font-weight: 600;
+    width: auto;
+    color:#3A3636;
+    width: auto;
+    height: 28px;
+}
+h3{
+    font-size: 20px;
+    font-weight: 400;
+}
+h4{
+    font-size: 24px;
+    font-weight: 300;
+    
+}
+
+h5{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21px;
+    width: auto;
+}
+ 
+
+body{
+    background-color: #e7e8f1;
+}
+.app{
+    
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 24px 0px;
+    gap: 24px;
+    position: relative;
+    height: auto;
+    
+}
+
+
+header{
+    display: flex;
+    justify-content: center;
+    height: 62px;
+}
+
+
+.your_savings{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 24px;
+    gap: 12px;
+    width: auto;
+    height: 92px;
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid #CEC2C2;
+    border-radius: 12px;
+
+}
+
+.income_expenses{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0px 16px;
+    gap: 16px;
+}
+
+.income, .expenses{  
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px 24px;
+    gap: 12px;
+    width: 200px;
+    height: 80px;
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid #E4E4E4;
+    border-radius: 12px;
+}
+
+
+
+/* HISTORY OF TRANSACTIONS */
+.history{
+    display:flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 12px;
+    width: 634px;
+    height: auto;
+    padding: 16px 16px;
+    border: 1px solid #E6E6E6;
+    background: rgba(255, 255, 255, 0.47);
+    border: 1px solid #FFFFFF;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 9px;
+}
+/* TRANSACTION LIST CONTAINER */
+
+.list-container{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* NEGATIVE TRANSACTION */
+.sublist-content{
+    display: flex;
+    border-right: 10px solid #EB694C;    
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 610px;
+    height: 43px;
+    background: rgba(235, 105, 76, 0.1);
+    border-radius: 4px 4px 4px 4px;  
+}
+.quantity{
+    font-size: 20px;
+    font-weight: 500;
+    color:#EB694C
+}
+.concept{
+    font-size: 20px;
+    font-weight: 500;
+    color: #EB694C
+}
+
+
+
+/* Positive TRANSACTION */
+.sublist-content-income{
+    display: flex;
+    border-right: 10px solid #2a2dff;    
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 610px;
+    height: 43px;
+    background: rgba(76, 100, 235, 0.1);
+    border-radius: 4px 4px 4px 4px;  
+}
+.quantity-income{
+    font-size: 20px;
+    font-weight: 500;
+    color:#2a2dff
+}
+.concept-income{
+    font-size: 20px;
+    font-weight: 500;
+    color: #2a2dff
+}
+
+/* ADD NEW TRANSACTIONS */
+
+
+.add_transaction{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    gap: 16px;
+    width: auto;
+    height: auto;
+    background: rgba(255, 255, 255, 0.47);
+    border: 1px solid #FFFFFF;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 9px;
+}
+
+
+.input_concept, .input_quantity{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap:12px;
+}
+label, p{ 
+    margin-top: 12px;
+    color: #626262;
+    font-size: 14px;
+}
+#concept{
+    width: 600px;
+    height: 39px;
+    padding: 10px;
+    background-color: #ffffff;
+    border: 1px solid #CECECE;
+    border-radius: 4px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;   
+}
+
+#quantity{
+    width: 600px;
+    height: 39px;
+    padding: 10px;
+    background-color: #ffffff;
+    border: 1px solid #CECECE;
+    border-radius: 4px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;   
+}
+
+.flex-space {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+/*button add*/
+#addTransactionButton{
+    width: 210px;
+    background: #3E4DD3;
+    border-radius: 33px;
+    border: solid 0px;
+    padding: 12px 24px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+}
+
+
+
+
+

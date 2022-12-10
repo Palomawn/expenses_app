@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+  />
+    
+</head>
+<body>
+    
+    <div class="app">
+        <header>
+            <h1>Expenses control</h1>
+        </header>
+        
+        <div class="your_savings">
+            <h2>Your Savings</h2>
+            <div >
+                <h4 id="balance">0 €</h4>
+                
+            </div>   
+        </div>
+        
+        <!--Incomes&expenses--> 
+        <div class="income_expenses">
+            <!--Incomes--> 
+            <div class="income">
+                <h3>Income</h3>
+                <h5 id="income-value"> 0 €</h5>
+            </div>  
+            <!--Expenses--> 
+            <div class="expenses">
+                <h3>Expenses</h3>
+                <h5 id="expenditure-value">0 €</h5>
+            </div> 
+        </div>
+
+        <!-- History List -->
+        <div class="history">
+            <h3>History</h3>
+            <div class="list-container" id="history_list"> </div>
+        
+        </div>
+
+        <!-- Expenditure -->
+        <div class="add_transaction">
+         <h3>Add new transaction</h3>
+            <div class="input_concept">   
+                <label for="Concept"><h3>Concept</h3></label>
+                <input 
+                    type="text" 
+                    id="concept" 
+                    name="concept" 
+                    minlength="4" 
+                    maxlength="20"  
+                    placeholder="Type concept here"
+                >              
+            </div>
+
+            <div class="input_quantity">   
+                <label for="quantity"><h3>Quantity</h3><p>*negative = expense / positive = income</p></label>
+                <input 
+                    type="number" 
+                    id="quantity" 
+                    name="concept" 
+                    min="4" max="20"  
+                    placeholder="Type the quantity here"
+                >                
+            </div>            
+            <button id="addTransactionButton">Add transaction</button>           
+        </div>
+    
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
